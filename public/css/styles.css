@@ -1,0 +1,156 @@
+body {
+    font-family: sans-serif;
+    background-color: #333333;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1920px;
+    margin: auto;
+    background: #333333;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.main-content {
+    /* Sets up a flexbox container for a two-column layout. */
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.left-column, .right-column {
+    /* Each column takes up equal space. */
+    flex: 1;
+}
+
+h1, h2 {
+    color: #4d959e;
+    text-align: center;
+}
+p {
+    color: #4d959e;
+}
+
+.form-container {
+    margin-bottom: 20px;
+}
+
+form input, form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: #1d1d1d;
+    color: white;
+}
+
+form button {
+    background-color: #0063a5;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+form button:hover {
+    background-color: #0099ff;
+}
+
+/* Posts */
+.posts-container {
+    margin-top: 20px;
+}
+
+.post {
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    background: #1d1d1d;
+    color: #4d959e;
+}
+
+.post h3 {
+    margin-top: 0;
+    color: #4d959e;
+}
+
+.post-meta {
+    font-size: 0.9em;
+    color: #4d959e;
+    margin-bottom: 10px;
+}
+
+.post-actions .btn {
+    text-decoration: none;
+    padding: 8px 12px;
+    margin-right: 5px;
+    border-radius: 4px;
+    display: inline-block;
+    background-color: #007506;
+    color: white;
+}
+
+.post-actions .btn:hover {
+    background-color: #00ff0d;
+}
+
+.post-actions .delete-btn {
+    background-color: #940f00;
+    color: white;
+    border: none;
+}
+
+.post-actions .delete-btn:hover {
+    background-color: #ff1900;
+}
+
+.back-btn {
+    background-color: #940f00;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.back-btn:hover {
+    background-color: #ff1900;
+}
+
+form select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: #1d1d1d;
+    color: #ccc;
+}
+
+/* Responsive design */
+@media (max-width: 800px) {
+    .container {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .main-content {
+        /* Changes the layout to a single column on smaller screens. */
+        flex-direction: column;
+    }
+}
